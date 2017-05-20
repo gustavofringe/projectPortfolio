@@ -3,4 +3,17 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/reset";
+@import "compass";
+@import "header";
+html, body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.container{@include clearfix;}
+.site-content{
+  padding-top:$height-header;}
+@import "footer";
