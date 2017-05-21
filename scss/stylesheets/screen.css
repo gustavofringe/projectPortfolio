@@ -2,56 +2,53 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 3, ../sass/_header.scss */
+/* line 9, ../sass/screen.scss */
+html, body {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 16px;
+  line-height: 1.4;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 17, ../sass/screen.scss */
 a {
   text-decoration: none;
   color: inherit;
-}
-
-/* line 7, ../sass/_header.scss */
-.header {
-  position: static;
-  left: 0;
-  right: 0;
-  height: 70px;
-  line-height: 66px;
-  border-bottom: 1px dashed black;
-}
-
-/* line 15, ../sass/_header.scss */
-.header_logo {
-  padding: 0 25px;
-  float: left;
-}
-/* line 18, ../sass/_header.scss */
-.header_logo img {
-  height: 60px;
-}
-
-/* line 22, ../sass/_header.scss */
-.menu {
-  float: right;
-}
-/* line 24, ../sass/_header.scss */
-.menu a {
-  padding: 0 10px;
   text-transform: uppercase;
 }
-/* line 27, ../sass/_header.scss */
-.menu a:hover {
-  color: grey;
+
+/* line 22, ../sass/screen.scss */
+.container {
+  overflow: hidden;
+  *zoom: 1;
 }
 
-/*==============================================================
-mobile
-================================================================*/
-@media only screen and (max-width: 768px) {
-  /* line 36, ../sass/_header.scss */
+/* line 23, ../sass/screen.scss */
+.site-content {
+  padding-top: 70px;
+}
+
+/* line 25, ../sass/screen.scss */
+footer {
+  background-color: #474747;
+}
+/* line 27, ../sass/screen.scss */
+footer img {
+  height: 30px;
+}
+
+/*===========================================================================
+tablet landscap format
+===============================================================================*/
+@media only screen and (min-width: 768px) {
+  /* line 5, ../sass/_tablet.scss */
   .site-pusher, .site-container {
     height: 100%;
   }
 
-  /* line 39, ../sass/_header.scss */
+  /* line 8, ../sass/_tablet.scss */
   .site-pusher {
     -moz-transition-duration: 0.4s;
     -o-transition-duration: 0.4s;
@@ -63,12 +60,12 @@ mobile
     transform: translateX(0px);
   }
 
-  /* line 43, ../sass/_header.scss */
+  /* line 12, ../sass/_tablet.scss */
   .site-container {
     overflow: hidden;
   }
 
-  /* line 46, ../sass/_header.scss */
+  /* line 15, ../sass/_tablet.scss */
   .site-content {
     position: absolute;
     top: 70px;
@@ -80,12 +77,12 @@ mobile
     -webkit-overflow-scrolling: touch;
   }
 
-  /* line 56, ../sass/_header.scss */
+  /* line 25, ../sass/_tablet.scss */
   .header {
     position: static;
   }
 
-  /* line 59, ../sass/_header.scss */
+  /* line 28, ../sass/_tablet.scss */
   .header_icon {
     position: relative;
     display: block;
@@ -94,7 +91,7 @@ mobile
     height: 70px;
     cursor: pointer;
   }
-  /* line 66, ../sass/_header.scss */
+  /* line 35, ../sass/_tablet.scss */
   .header_icon:after {
     content: '';
     position: absolute;
@@ -108,7 +105,7 @@ mobile
     box-shadow: 0 10px 0 2px black, 0 20px 0 2px black, 0 30px 0 2px black;
   }
 
-  /* line 77, ../sass/_header.scss */
+  /* line 46, ../sass/_tablet.scss */
   .menu {
     position: absolute;
     right: 0;
@@ -125,7 +122,7 @@ mobile
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
   }
-  /* line 86, ../sass/_header.scss */
+  /* line 55, ../sass/_tablet.scss */
   .menu a {
     display: block;
     text-align: center;
@@ -134,14 +131,14 @@ mobile
     border-bottom: 1px solid grey;
   }
 
-  /* line 95, ../sass/_header.scss */
+  /* line 64, ../sass/_tablet.scss */
   .with--sidebar .site-pusher {
     -moz-transform: translateX(-250px);
     -ms-transform: translateX(-250px);
     -webkit-transform: translateX(-250px);
     transform: translateX(-250px);
   }
-  /* line 98, ../sass/_header.scss */
+  /* line 67, ../sass/_tablet.scss */
   .with--sidebar .site-cache {
     position: absolute;
     left: 0;
@@ -151,28 +148,76 @@ mobile
     background-color: rgba(0, 0, 0, 0.8);
   }
 }
-/* line 8, ../sass/screen.scss */
-html, body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1.4;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
+/*===============================================================================
+tablet landscape format
+==================================================================================*/
+@media only screen and (min-width: 1024px) {
+  /* line 82, ../sass/_tablet.scss */
+  .menu-desktop {
+    line-height: 66px;
+    float: right;
+    padding: 0 25px;
+  }
+  /* line 86, ../sass/_tablet.scss */
+  .menu-desktop a {
+    padding: 0 10px;
+  }
 
-/* line 16, ../sass/screen.scss */
-.container {
-  overflow: hidden;
-  *zoom: 1;
-}
+  /* line 90, ../sass/_tablet.scss */
+  .header {
+    border-bottom: 1px dashed grey;
+  }
 
-/* line 17, ../sass/screen.scss */
-.site-content {
-  padding-top: 70px;
-}
+  /* line 94, ../sass/_tablet.scss */
+  .header_logo img {
+    height: 66px;
+  }
 
-/* line 2, ../sass/_footer.scss */
-footer img {
-  height: 30px;
+  /* line 98, ../sass/_tablet.scss */
+  .header_icon {
+    display: none;
+  }
+}
+/*==============================================================
+desktop format
+================================================================*/
+@media only screen and (min-width: 1200px) {
+  /* line 6, ../sass/_desktop.scss */
+  .header {
+    position: static;
+    left: 0;
+    right: 0;
+    height: 70px;
+    line-height: 66px;
+    border-bottom: 1px dashed black;
+  }
+
+  /* line 14, ../sass/_desktop.scss */
+  .header_logo {
+    padding: 0 25px;
+    float: left;
+  }
+  /* line 17, ../sass/_desktop.scss */
+  .header_logo img {
+    height: 60px;
+  }
+
+  /* line 21, ../sass/_desktop.scss */
+  .header_icon {
+    display: none;
+  }
+
+  /* line 24, ../sass/_desktop.scss */
+  .menu {
+    float: right;
+  }
+  /* line 26, ../sass/_desktop.scss */
+  .menu a {
+    padding: 0 10px;
+    text-transform: uppercase;
+  }
+  /* line 29, ../sass/_desktop.scss */
+  .menu a:hover {
+    color: grey;
+  }
 }

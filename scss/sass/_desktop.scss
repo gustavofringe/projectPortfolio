@@ -1,0 +1,34 @@
+/*==============================================================
+desktop format
+================================================================*/
+@media only screen and (min-width: 1200px){
+
+  .header{
+    position: static;
+    left: 0;
+    right: 0;
+    height: $height-header;
+    line-height: 66px;
+    border-bottom: 1px dashed black;
+  }
+  .header_logo{
+    padding: 0 25px;
+    float: left;
+    img{
+      height: 60px;
+    }
+  }
+  .header_icon{
+    display: none;
+  }
+  .menu{
+    float: right;
+    a{
+      padding: 0 10px;
+      text-transform: uppercase;
+      &:hover{
+        color: grey;
+      }
+    }
+  }
+}

@@ -4,16 +4,29 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass";
-@import "header";
+$height-header:70px;
+$menu-width:250px !default;
 html, body{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif !important;
   font-size: 16px;
   line-height: 1.4;
   height: 100%;
   margin: 0;
   padding: 0;
 }
+a{
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+}
 .container{@include clearfix;}
 .site-content{
   padding-top:$height-header;}
-@import "footer";
+footer{
+  background-color: #474747;
+  img{
+    height: 30px;
+  }
+}
+@import "tablet";
+@import "desktop";
