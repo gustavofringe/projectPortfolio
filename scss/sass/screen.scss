@@ -21,9 +21,17 @@ a{
 }
 .container{@include clearfix;}
 .site-content{
-  padding-top:$height-header;}
+  padding-top:80px;}
 footer{
-  background-color: #474747;
+  h3{
+    font-size: 20px;
+  }
+  background-color: #CCCCCC;
+  .dashed{
+    height: 100%;
+    border-left: 1px dashed grey;
+    border-right: 1px dashed grey;
+  }
   img{
     height: 30px;
   }

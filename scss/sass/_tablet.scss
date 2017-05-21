@@ -80,6 +80,7 @@ tablet landscape format
 @media only screen and (min-width: 1024px) {
 
   .menu-desktop{
+    height: 66px;
     line-height: 66px;
     float: right;
     padding: 0 25px;
@@ -91,6 +92,7 @@ tablet landscape format
     border-bottom: 1px dashed grey;
   }
   .header_logo{
+    padding: 0 40px;
     img{
       height: 66px;
     }

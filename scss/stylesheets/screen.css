@@ -32,9 +32,19 @@ a {
 
 /* line 25, ../sass/screen.scss */
 footer {
-  background-color: #474747;
+  background-color: #CCCCCC;
 }
-/* line 27, ../sass/screen.scss */
+/* line 26, ../sass/screen.scss */
+footer h3 {
+  font-size: 20px;
+}
+/* line 30, ../sass/screen.scss */
+footer .dashed {
+  height: 100%;
+  border-left: 1px dashed grey;
+  border-right: 1px dashed grey;
+}
+/* line 35, ../sass/screen.scss */
 footer img {
   height: 30px;
 }
@@ -154,26 +164,31 @@ tablet landscape format
 @media only screen and (min-width: 1024px) {
   /* line 82, ../sass/_tablet.scss */
   .menu-desktop {
+    height: 66px;
     line-height: 66px;
     float: right;
     padding: 0 25px;
   }
-  /* line 86, ../sass/_tablet.scss */
+  /* line 87, ../sass/_tablet.scss */
   .menu-desktop a {
     padding: 0 10px;
   }
 
-  /* line 90, ../sass/_tablet.scss */
+  /* line 91, ../sass/_tablet.scss */
   .header {
     border-bottom: 1px dashed grey;
   }
 
   /* line 94, ../sass/_tablet.scss */
+  .header_logo {
+    padding: 0 40px;
+  }
+  /* line 96, ../sass/_tablet.scss */
   .header_logo img {
     height: 66px;
   }
 
-  /* line 98, ../sass/_tablet.scss */
+  /* line 100, ../sass/_tablet.scss */
   .header_icon {
     display: none;
   }
