@@ -4,8 +4,13 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass";
+@import "compass/css3/filter";
 $height-header:70px;
 $menu-width:250px !default;
+$p-index:#C4B2FF;
+/*==============================================================================================================
+html, body
+=================================================================================================================*/
 html, body{
   font-family: 'Open Sans', sans-serif !important;
   font-size: 16px;
@@ -19,11 +24,188 @@ a{
   color: inherit;
   text-transform: uppercase;
 }
+/*===========================================================================================================
+header
+============================================================================================================*/
+
+.header{
+  height: $height-header;
+  position: static;
+  border-bottom: 1px dashed grey;
+  img{
+    margin-top: 10px;
+    padding: 0 25px;
+    height: 50px;
+  }
+}
+/*============================================================================================================
+hamburger icon
+=============================================================================================================*/
+.header_icon{
+  position: relative;
+  display: block;
+  float:right;
+  height: $height-header;
+  width: 50px;
+  height: $height-header;
+  cursor: pointer;
+  &:after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 22px;
+    height: 0;
+    top: 14px;
+    left: 16px;
+    @include box-shadow(0 10px 0 2px black, 0 20px 0 2px black, 0 30px 0 2px black);
+  }
+}
+/*=========================================================================================================
+hidden menu
+===========================================================================================================*/
+.menu{
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #34667e;
+  width: $menu-width;
+  @include transform (translateX($menu-width));
+  @include transition-duration(0.4s);
+  a{
+    display: block;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid grey;
+  }
+}
+/*============================================================================================================
+menu desktop
+==============================================================================================================*/
+.menu-desktop{
+  display: none;
+}
+/*=================================================================================================================
+visible menu
+when the body have a with side bar class
+==================================================================================================================*/
+.with--sidebar{
+  .site-pusher{
+    @include transform(translateX($menu-width *-1));
+  }
+  .site-cache{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.8);
+  }
+}
+/*============================================================================================================
+container
+===============================================================================================================*/
+.site-pusher, .site-container{
+  height: 100%;
+}
+.site-pusher{
+  @include transition-duration(0.4s);
+  @include transform(translateX(0px));
+}
+.site-container{
+  overflow: hidden;
+}
+.site-content{
+  position: absolute;
+  top:$height-header;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 0;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
 .container{@include clearfix;}
 .site-content{
-  padding-top:80px;}
+  padding-top:30px;
+}
+/*===========================================================================================================
+my picture
+==============================================================================================================*/
+.figure{
+  display: none;
+}
+/*===========================================================================================================
+article
+=======================================================================================================*/
+.description{
+  padding: 0;
+  margin: 0;
+  @include border-radius(5px);
+  border: 1px dashed grey;
+  h1{
+    font-size: 24px;
+  }
+  h2{
+    font-size: 24px;
+    em{
+      font-size: 16px;
+      color: $p-index;
+    }
+  }
+  p{
+    color: $p-index;
+  }
+  .simplon{
+    overflow: auto;
+    img{
+      height: 50px;
+      width: 50px;
+      float: left;
+    }
+  }
+}
+.card {
+  .content-image{
+    cursor: pointer;
+    height: 150px;
+    width: 240px;
+    @include transition(all 0.3s ease-in-out);
+    &:hover {
+      @include transform(scale(1.2));
+      opacity: 0.5;
+      .image{
+        margin: auto auto;
+        height: 30px;
+        width: 30px;
+        opacity: 1;
+        content: url("../../img/link-3.svg");
+      }
+    }
+  }
+  .first{
+    background: url("../../img/archiduchesse_s.png");
+  }
+  .second{
+    background: url("../../img/leboncoin_s.png");
+  }
+  .third{
+    background: url("../../img/coachSporstif_s.png");
+  }
+  .fourth{
+    background: url("../../img/airbnb_s.png");
+  }
+  .card-title{
+    font-size: 15px;
+  }
+  .card-text{
+    font-size: 10px;
+    color: grey;
+  }
+}
 footer{
-  h3{
+  h4{
     font-size: 20px;
   }
   background-color: #CCCCCC;
@@ -34,6 +216,11 @@ footer{
   }
   img{
     height: 30px;
+  }
+  .article-footer{
+    p{
+      font-size: 10px;
+    }
   }
 }
 @import "tablet";
