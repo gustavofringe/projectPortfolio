@@ -34,16 +34,17 @@ desktop format
     }
   }
   .media {
-    background-image: url("../../img/W7-GC-Accueil-apps_s.png");
+    background-image: url("../../img/sites/mac.png-vsnd");
     background-size: cover;
+    @include border-radius(3px);
     width: 400px;
     height: 280px;
     .carousel-item {
-      margin-top: 30px;
-      margin-left: 10px;
+      margin-top: 45px;
+      margin-left: 15px;
       padding-bottom:10px;
-      width: 380px;
-      height: 240px;
+      width: 370px;
+      height: 230px;
     }
   }
 }

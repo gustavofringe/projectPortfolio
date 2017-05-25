@@ -8,7 +8,7 @@
 $height-header:80px;
 $menu-width:250px !default;
 $p-index:#C4B2FF;
-$color-form: #2254FF;
+$color-form: #ff85a4;
 /*==============================================================================================================
 html, body
 =================================================================================================================*/
@@ -125,6 +125,18 @@ when the body have a with side bar class
 /*============================================================================================================
 container
 ===============================================================================================================*/
+.stripe{
+  position: relative;
+  &:after{
+    position: absolute;
+    content: '';
+    background: url('../../img/stripes.png-vsnd') repeat-x center center;
+    top: 10px;
+    left:0;
+    right: 0;
+    bottom: 0;
+  }
+}
 .site-pusher, .site-container{
   height: 100%;
 }
@@ -182,6 +194,9 @@ article
   p{
     color: $p-index;
   }
+  span {
+    text-transform: uppercase;
+  }
   .simplon{
     overflow: auto;
     img{
@@ -213,16 +228,16 @@ card
     }
   }
   .first{
-    background: url("../../img/archiduchesse_s.png");
+    background: url("../../img/sites/archiduchesse_s.png");
   }
   .second{
-    background: url("../../img/leboncoin_s.png");
+    background: url("../../img/sites/leboncoin_s.png");
   }
   .third{
-    background: url("../../img/coachSporstif_s.png");
+    background: url("../../img/sites/coachSporstif_s.png");
   }
   .fourth{
-    background: url("../../img/airbnb_s.png");
+    background: url("../../img/sites/airbnb_s.png");
   }
   .card-title{
     font-size: 15px;
@@ -230,27 +245,6 @@ card
   .card-text{
     font-size: 10px;
     color: grey;
-  }
-}
-/*==============================================================================
-footer
-================================================================================*/
-footer{
-  border-top: 1px dashed grey;
-  h4{
-    font-size: 20px;
-  }
-  background-color: #CCCCCC;
-  .dashed{
-    border-left: 1px dashed grey;
-  }
-  img{
-    height: 30px;
-  }
-  .article-footer{
-    p{
-      font-size: 10px;
-    }
   }
 }
 /*=======================================================================
@@ -313,5 +307,33 @@ form
 .message{
   color: lighten(#000, 75);
 }
+/*=============================================================================
+competence
+==============================================================================*/
+.language{
+  height: 200px;
+}
+/*==============================================================================
+footer
+================================================================================*/
+footer{
+  border-top: 1px dashed grey;
+  h4{
+    font-size: 20px;
+  }
+  background-color: #CCCCCC;
+  .dashed{
+    border-left: 1px dashed grey;
+  }
+  img{
+    height: 30px;
+  }
+  .article-footer{
+    p{
+      font-size: 10px;
+    }
+  }
+}
+
 @import "tablet";
 @import "desktop";

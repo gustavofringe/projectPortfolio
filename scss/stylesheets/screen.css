@@ -143,11 +143,26 @@ when the body have a with side bar class
 container
 ===============================================================================================================*/
 /* line 128, ../sass/screen.scss */
+.stripe {
+  position: relative;
+}
+/* line 130, ../sass/screen.scss */
+.stripe:after {
+  position: absolute;
+  content: '';
+  background: url("../../img/stripes.png-vsnd") repeat-x center center;
+  top: 10px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 140, ../sass/screen.scss */
 .site-pusher, .site-container {
   height: 100%;
 }
 
-/* line 131, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 .site-pusher {
   -moz-transition-duration: 0.4s;
   -o-transition-duration: 0.4s;
@@ -159,12 +174,12 @@ container
   transform: translateX(0px);
 }
 
-/* line 135, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 .site-container {
   overflow: hidden;
 }
 
-/* line 138, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 .site-content {
   position: absolute;
   top: 80px;
@@ -176,18 +191,18 @@ container
   -webkit-overflow-scrolling: touch;
 }
 
-/* line 148, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 .container {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 149, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 .site-content {
   padding-top: 30px;
 }
 
-/* line 152, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 .border {
   border-bottom: 1px dashed grey;
 }
@@ -195,7 +210,7 @@ container
 /*===========================================================================================================
 my picture
 ==============================================================================================================*/
-/* line 158, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 .figure {
   display: none;
 }
@@ -203,7 +218,7 @@ my picture
 /*===========================================================================================================
 article
 =======================================================================================================*/
-/* line 164, ../sass/screen.scss */
+/* line 176, ../sass/screen.scss */
 .description {
   padding: 0;
   margin: 0;
@@ -211,33 +226,37 @@ article
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 168, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 .description h1 {
   font-size: 24px;
 }
-/* line 171, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 .description h2 {
   font-size: 24px;
 }
-/* line 173, ../sass/screen.scss */
+/* line 185, ../sass/screen.scss */
 .description h2 em {
   font-size: 16px;
   color: #C4B2FF;
 }
-/* line 178, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 .description img {
   width: 50px;
   margin: 30px;
 }
-/* line 182, ../sass/screen.scss */
+/* line 194, ../sass/screen.scss */
 .description p {
   color: #C4B2FF;
 }
-/* line 185, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
+.description span {
+  text-transform: uppercase;
+}
+/* line 200, ../sass/screen.scss */
 .description .simplon {
   overflow: auto;
 }
-/* line 187, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
 .description .simplon img {
   height: 50px;
   width: 50px;
@@ -247,7 +266,7 @@ article
 /*=============================================================================
 card
 ==============================================================================*/
-/* line 198, ../sass/screen.scss */
+/* line 213, ../sass/screen.scss */
 .card .content-image {
   cursor: pointer;
   height: 150px;
@@ -257,7 +276,7 @@ card
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 203, ../sass/screen.scss */
+/* line 218, ../sass/screen.scss */
 .card .content-image:hover {
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
@@ -265,7 +284,7 @@ card
   transform: scale(1.2);
   opacity: 0.5;
 }
-/* line 206, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
 .card .content-image:hover .image {
   margin: auto auto;
   height: 30px;
@@ -273,68 +292,43 @@ card
   opacity: 1;
   content: url("../../img/link-3.svg");
 }
-/* line 215, ../sass/screen.scss */
+/* line 230, ../sass/screen.scss */
 .card .first {
-  background: url("../../img/archiduchesse_s.png");
+  background: url("../../img/sites/archiduchesse_s.png");
 }
-/* line 218, ../sass/screen.scss */
+/* line 233, ../sass/screen.scss */
 .card .second {
-  background: url("../../img/leboncoin_s.png");
+  background: url("../../img/sites/leboncoin_s.png");
 }
-/* line 221, ../sass/screen.scss */
+/* line 236, ../sass/screen.scss */
 .card .third {
-  background: url("../../img/coachSporstif_s.png");
+  background: url("../../img/sites/coachSporstif_s.png");
 }
-/* line 224, ../sass/screen.scss */
+/* line 239, ../sass/screen.scss */
 .card .fourth {
-  background: url("../../img/airbnb_s.png");
+  background: url("../../img/sites/airbnb_s.png");
 }
-/* line 227, ../sass/screen.scss */
+/* line 242, ../sass/screen.scss */
 .card .card-title {
   font-size: 15px;
 }
-/* line 230, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
 .card .card-text {
   font-size: 10px;
   color: grey;
 }
 
-/*==============================================================================
-footer
-================================================================================*/
-/* line 238, ../sass/screen.scss */
-footer {
-  border-top: 1px dashed grey;
-  background-color: #CCCCCC;
-}
-/* line 240, ../sass/screen.scss */
-footer h4 {
-  font-size: 20px;
-}
-/* line 244, ../sass/screen.scss */
-footer .dashed {
-  border-left: 1px dashed grey;
-}
-/* line 247, ../sass/screen.scss */
-footer img {
-  height: 30px;
-}
-/* line 251, ../sass/screen.scss */
-footer .article-footer p {
-  font-size: 10px;
-}
-
 /*=======================================================================
 form
 ===========================================================================*/
-/* line 259, ../sass/screen.scss */
+/* line 253, ../sass/screen.scss */
 .field {
   position: relative;
   height: 72px;
   padding: 16px 0 8px 0;
 }
 
-/* line 264, ../sass/screen.scss */
+/* line 258, ../sass/screen.scss */
 .field-label {
   position: relative;
   margin: 0;
@@ -353,7 +347,7 @@ form
   transition-duration: 0.3s;
 }
 
-/* line 275, ../sass/screen.scss */
+/* line 269, ../sass/screen.scss */
 .field-input {
   position: relative;
   display: block;
@@ -368,7 +362,7 @@ form
   outline: none;
 }
 
-/* line 288, ../sass/screen.scss */
+/* line 282, ../sass/screen.scss */
 .field::after, .field::before {
   content: '';
   height: 2px;
@@ -379,9 +373,9 @@ form
   background-color: #e7e7e7;
 }
 
-/* line 297, ../sass/screen.scss */
+/* line 291, ../sass/screen.scss */
 .field::after {
-  background-color: #2254FF;
+  background-color: #ff85a4;
   -moz-transform: scaleX(0);
   -ms-transform: scaleX(0);
   -webkit-transform: scaleX(0);
@@ -392,7 +386,7 @@ form
   transition-duration: 0.3s;
 }
 
-/* line 302, ../sass/screen.scss */
+/* line 296, ../sass/screen.scss */
 .has-label .field-label {
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
@@ -400,13 +394,13 @@ form
   transform: translateY(0);
 }
 
-/* line 305, ../sass/screen.scss */
+/* line 299, ../sass/screen.scss */
 .is-focused .field-label {
   font-size: 12px;
-  color: #2254FF;
+  color: #ff85a4;
 }
 
-/* line 310, ../sass/screen.scss */
+/* line 304, ../sass/screen.scss */
 .field.is-focused::after {
   -moz-transform: scaleX(1);
   -ms-transform: scaleX(1);
@@ -414,9 +408,42 @@ form
   transform: scaleX(1);
 }
 
-/* line 313, ../sass/screen.scss */
+/* line 307, ../sass/screen.scss */
 .message {
   color: #bfbfbf;
+}
+
+/*=============================================================================
+competence
+==============================================================================*/
+/* line 313, ../sass/screen.scss */
+.language {
+  height: 200px;
+}
+
+/*==============================================================================
+footer
+================================================================================*/
+/* line 319, ../sass/screen.scss */
+footer {
+  border-top: 1px dashed grey;
+  background-color: #CCCCCC;
+}
+/* line 321, ../sass/screen.scss */
+footer h4 {
+  font-size: 20px;
+}
+/* line 325, ../sass/screen.scss */
+footer .dashed {
+  border-left: 1px dashed grey;
+}
+/* line 328, ../sass/screen.scss */
+footer img {
+  height: 30px;
+}
+/* line 332, ../sass/screen.scss */
+footer .article-footer p {
+  font-size: 10px;
 }
 
 /*===========================================================================
@@ -525,17 +552,20 @@ desktop format
 
   /* line 36, ../sass/_desktop.scss */
   .media {
-    background-image: url("../../img/W7-GC-Accueil-apps_s.png");
+    background-image: url("../../img/sites/mac.png-vsnd");
     background-size: cover;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
     width: 400px;
     height: 280px;
   }
-  /* line 41, ../sass/_desktop.scss */
+  /* line 42, ../sass/_desktop.scss */
   .media .carousel-item {
-    margin-top: 30px;
-    margin-left: 10px;
+    margin-top: 45px;
+    margin-left: 15px;
     padding-bottom: 10px;
-    width: 380px;
-    height: 240px;
+    width: 370px;
+    height: 230px;
   }
 }
