@@ -12,7 +12,7 @@ desktop format
     line-height: 66px;
     border-bottom: 1px dashed black;
   }
-  .container-top{
+  .container-top {
     width: 80%;
     margin: 0 auto;
     .header_logo {
@@ -31,6 +31,19 @@ desktop format
           color: grey;
         }
       }
+    }
+  }
+  .media {
+    background-image: url("../../img/W7-GC-Accueil-apps_s.png");
+    background-size: cover;
+    width: 400px;
+    height: 280px;
+    .carousel-item {
+      margin-top: 30px;
+      margin-left: 15px;
+      padding-bottom:10px;
+      width: 380px;
+      height: 240px;
     }
   }
 }

@@ -427,4 +427,20 @@ desktop format
   .container-top .menu a:hover {
     color: grey;
   }
+
+  /* line 36, ../sass/_desktop.scss */
+  .media {
+    background-image: url("../../img/W7-GC-Accueil-apps_s.png");
+    background-size: cover;
+    width: 400px;
+    height: 280px;
+  }
+  /* line 41, ../sass/_desktop.scss */
+  .media .carousel-item {
+    margin-top: 30px;
+    margin-left: 15px;
+    padding-bottom: 10px;
+    width: 380px;
+    height: 240px;
+  }
 }
