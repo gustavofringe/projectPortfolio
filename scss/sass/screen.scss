@@ -5,7 +5,7 @@
 
 @import "compass";
 @import "compass/css3/filter";
-$height-header:70px;
+$height-header:80px;
 $menu-width:250px !default;
 $p-index:#C4B2FF;
 /*==============================================================================================================
@@ -32,10 +32,25 @@ header
   height: $height-header;
   position: static;
   border-bottom: 1px dashed grey;
-  img{
+  svg{
+    width: 100px;
     margin-top: 10px;
     padding: 0 25px;
     height: 50px;
+    .inside {
+      fill: #bcbcad;
+      fill-opacity: 1;
+    }
+    .init {
+      fill: #595963;
+      fill-opacity: 1;
+    }
+    .init, .inside {
+      &:hover {
+        fill: #1f55ff;
+        fill-opacity: 0.5;
+      }
+    }
   }
 }
 /*============================================================================================================
@@ -63,21 +78,24 @@ hamburger icon
 /*=========================================================================================================
 hidden menu
 ===========================================================================================================*/
-.menu{
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-color: #34667e;
-  width: $menu-width;
-  @include transform (translateX($menu-width));
-  @include transition-duration(0.4s);
-  a{
-    display: block;
-    text-align: center;
-    height: 40px;
-    line-height: 40px;
-    border-bottom: 1px solid grey;
+.container-top{
+
+  .menu{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #34667e;
+    width: $menu-width;
+    @include transform (translateX($menu-width));
+    @include transition-duration(0.4s);
+    a{
+      display: block;
+      text-align: center;
+      height: 40px;
+      line-height: 40px;
+      border-bottom: 1px solid grey;
+    }
   }
 }
 /*============================================================================================================
@@ -130,6 +148,9 @@ container
 .site-content{
   padding-top:30px;
 }
+.border{
+  border-bottom: 1px dashed grey;
+}
 /*===========================================================================================================
 my picture
 ==============================================================================================================*/
@@ -143,7 +164,6 @@ article
   padding: 0;
   margin: 0;
   @include border-radius(5px);
-  border: 1px dashed grey;
   h1{
     font-size: 24px;
   }
@@ -153,6 +173,10 @@ article
       font-size: 16px;
       color: $p-index;
     }
+  }
+  img{
+    width: 50px;
+    margin: 30px;
   }
   p{
     color: $p-index;
@@ -166,6 +190,9 @@ article
     }
   }
 }
+/*=============================================================================
+card
+==============================================================================*/
 .card {
   .content-image{
     cursor: pointer;
@@ -204,15 +231,17 @@ article
     color: grey;
   }
 }
+/*==============================================================================
+footer
+================================================================================*/
 footer{
+  border-top: 1px dashed grey;
   h4{
     font-size: 20px;
   }
   background-color: #CCCCCC;
   .dashed{
-    height: 100%;
     border-left: 1px dashed grey;
-    border-right: 1px dashed grey;
   }
   img{
     height: 30px;

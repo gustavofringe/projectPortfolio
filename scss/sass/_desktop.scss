@@ -1,9 +1,9 @@
 /*==============================================================
 desktop format
 ================================================================*/
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1200px) {
 
-  .header{
+  .header {
     position: static;
     top: 80px;
     left: 0;
@@ -12,23 +12,24 @@ desktop format
     line-height: 66px;
     border-bottom: 1px dashed black;
   }
-  .header_logo{
-    padding: 0 25px;
-    float: left;
-    img{
-      height: 60px;
+  .container-top{
+    width: 80%;
+    margin: 0 auto;
+    .header_logo {
+      padding: 0 25px;
+      float: left;
     }
-  }
-  .header_icon{
-    display: none;
-  }
-  .menu{
-    float: right;
-    a{
-      padding: 0 10px;
-      text-transform: uppercase;
-      &:hover{
-        color: grey;
+    .header_icon {
+      display: none;
+    }
+    .menu {
+      float: right;
+      a {
+        padding: 0 10px;
+        text-transform: uppercase;
+        &:hover {
+          color: grey;
+        }
       }
     }
   }
