@@ -551,7 +551,7 @@ desktop format
   }
 
   /* line 36, ../sass/_desktop.scss */
-  .media {
+  .media-back {
     background-image: url("../../img/sites/mac.png-vsnd");
     background-size: cover;
     -moz-border-radius: 3px;
@@ -561,7 +561,7 @@ desktop format
     height: 280px;
   }
   /* line 42, ../sass/_desktop.scss */
-  .media .carousel-item {
+  .media-back .carousel-item {
     margin-top: 45px;
     margin-left: 15px;
     padding-bottom: 10px;
