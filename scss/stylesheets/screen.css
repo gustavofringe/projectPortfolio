@@ -267,12 +267,6 @@ article
 /*=============================================================================
 card
 ==============================================================================*/
-/* line 212, ../sass/screen.scss */
-.card {
-  /*================================================================================
-  image portfolio
-  ================================================================================*/
-}
 /* line 213, ../sass/screen.scss */
 .card .content-image {
   cursor: pointer;
@@ -299,59 +293,18 @@ card
   opacity: 1;
   content: url("../../img/link-3.svg");
 }
-/* line 233, ../sass/screen.scss */
-.card .first {
-  background: url("../../img/sites/archiduchesse/archiduchesse_s.png");
-}
-/* line 236, ../sass/screen.scss */
-.card .second {
-  background: url("../../img/sites/leboncoin/leboncoin_s.png");
-}
-/* line 239, ../sass/screen.scss */
-.card .third {
-  background: url("../../img/sites/coachsportif/coachSporstif_s.png");
-}
-/* line 242, ../sass/screen.scss */
-.card .fourth {
-  background: url("../../img/sites/airbnb/airbnb_s.png");
-}
-/* line 246, ../sass/screen.scss */
-.card .five:after {
-  content: 'Image à venir';
-}
-/* line 251, ../sass/screen.scss */
-.card .six:after {
-  content: 'Image à venir';
-}
-/* line 256, ../sass/screen.scss */
-.card .seven:after {
-  content: 'Image à venir';
-}
-/* line 261, ../sass/screen.scss */
-.card .eight:after {
-  content: 'Image à venir';
-}
-/* line 265, ../sass/screen.scss */
-.card .card-title {
-  font-size: 15px;
-}
-/* line 268, ../sass/screen.scss */
-.card .card-text {
-  font-size: 10px;
-  color: grey;
-}
 
 /*=======================================================================
 form
 ===========================================================================*/
-/* line 276, ../sass/screen.scss */
+/* line 234, ../sass/screen.scss */
 .field {
   position: relative;
   height: 72px;
   padding: 16px 0 8px 0;
 }
 
-/* line 281, ../sass/screen.scss */
+/* line 239, ../sass/screen.scss */
 .field-label {
   position: relative;
   margin: 0;
@@ -370,7 +323,7 @@ form
   transition-duration: 0.3s;
 }
 
-/* line 292, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 .field-input {
   position: relative;
   display: block;
@@ -385,7 +338,7 @@ form
   outline: none;
 }
 
-/* line 305, ../sass/screen.scss */
+/* line 263, ../sass/screen.scss */
 .field::after, .field::before {
   content: '';
   height: 2px;
@@ -396,7 +349,7 @@ form
   background-color: #e7e7e7;
 }
 
-/* line 314, ../sass/screen.scss */
+/* line 272, ../sass/screen.scss */
 .field::after {
   background-color: #ff85a4;
   -moz-transform: scaleX(0);
@@ -409,7 +362,7 @@ form
   transition-duration: 0.3s;
 }
 
-/* line 319, ../sass/screen.scss */
+/* line 277, ../sass/screen.scss */
 .has-label .field-label {
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
@@ -417,13 +370,13 @@ form
   transform: translateY(0);
 }
 
-/* line 322, ../sass/screen.scss */
+/* line 280, ../sass/screen.scss */
 .is-focused .field-label {
   font-size: 12px;
   color: #ff85a4;
 }
 
-/* line 327, ../sass/screen.scss */
+/* line 285, ../sass/screen.scss */
 .field.is-focused::after {
   -moz-transform: scaleX(1);
   -ms-transform: scaleX(1);
@@ -431,7 +384,7 @@ form
   transform: scaleX(1);
 }
 
-/* line 330, ../sass/screen.scss */
+/* line 288, ../sass/screen.scss */
 .message {
   color: #bfbfbf;
 }
@@ -439,7 +392,7 @@ form
 /*=============================================================================
 competence
 ==============================================================================*/
-/* line 336, ../sass/screen.scss */
+/* line 294, ../sass/screen.scss */
 .language {
   height: 200px;
 }
@@ -447,24 +400,24 @@ competence
 /*==============================================================================
 footer
 ================================================================================*/
-/* line 342, ../sass/screen.scss */
+/* line 300, ../sass/screen.scss */
 footer {
   border-top: 1px dashed grey;
   background-color: #CCCCCC;
 }
-/* line 344, ../sass/screen.scss */
+/* line 302, ../sass/screen.scss */
 footer h4 {
   font-size: 20px;
 }
-/* line 348, ../sass/screen.scss */
+/* line 306, ../sass/screen.scss */
 footer .dashed {
   border-left: 1px dashed grey;
 }
-/* line 351, ../sass/screen.scss */
+/* line 309, ../sass/screen.scss */
 footer img {
   height: 30px;
 }
-/* line 355, ../sass/screen.scss */
+/* line 313, ../sass/screen.scss */
 footer .article-footer p {
   font-size: 10px;
 }
@@ -593,8 +546,61 @@ desktop format
   }
 
   /* line 50, ../sass/_desktop.scss */
+  .link {
+    width: 25px;
+  }
+
+  /* line 53, ../sass/_desktop.scss */
   .photo {
     width: 300px;
     height: 300px;
+  }
+
+  /* line 57, ../sass/_desktop.scss */
+  .card {
+    /*================================================================================
+image portfolio
+================================================================================*/
+  }
+  /* line 61, ../sass/_desktop.scss */
+  .card .first {
+    background: url("../../img/sites/archiduchesse/archiduchesse_s.png");
+  }
+  /* line 64, ../sass/_desktop.scss */
+  .card .second {
+    background: url("../../img/sites/leboncoin/leboncoin_s.png");
+  }
+  /* line 67, ../sass/_desktop.scss */
+  .card .third {
+    background: url("../../img/sites/coachsportif/coachSporstif_s.png");
+  }
+  /* line 70, ../sass/_desktop.scss */
+  .card .fourth {
+    background: url("../../img/sites/airbnb/airbnb_s.png");
+  }
+  /* line 74, ../sass/_desktop.scss */
+  .card .five:after {
+    content: 'Image à venir';
+  }
+  /* line 79, ../sass/_desktop.scss */
+  .card .six:after {
+    content: 'Image à venir';
+  }
+  /* line 84, ../sass/_desktop.scss */
+  .card .seven:after {
+    content: 'Image à venir';
+  }
+  /* line 89, ../sass/_desktop.scss */
+  .card .eight:after {
+    content: 'Image à venir';
+  }
+  /* line 93, ../sass/_desktop.scss */
+  .card .card-title {
+    font-size: 15px;
+  }
+  /* line 96, ../sass/_desktop.scss */
+  .card .card-text {
+    font-size: 10px;
+    color: grey;
   }
 }
