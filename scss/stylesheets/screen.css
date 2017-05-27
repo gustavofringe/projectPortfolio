@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -266,6 +267,12 @@ article
 /*=============================================================================
 card
 ==============================================================================*/
+/* line 212, ../sass/screen.scss */
+.card {
+  /*================================================================================
+  image portfolio
+  ================================================================================*/
+}
 /* line 213, ../sass/screen.scss */
 .card .content-image {
   cursor: pointer;
@@ -292,27 +299,43 @@ card
   opacity: 1;
   content: url("../../img/link-3.svg");
 }
-/* line 230, ../sass/screen.scss */
-.card .first {
-  background: url("../../img/sites/archiduchesse_s.png");
-}
 /* line 233, ../sass/screen.scss */
-.card .second {
-  background: url("../../img/sites/leboncoin_s.png");
+.card .first {
+  background: url("../../img/sites/archiduchesse/archiduchesse_s.png");
 }
 /* line 236, ../sass/screen.scss */
-.card .third {
-  background: url("../../img/sites/coachSporstif_s.png");
+.card .second {
+  background: url("../../img/sites/leboncoin/leboncoin_s.png");
 }
 /* line 239, ../sass/screen.scss */
-.card .fourth {
-  background: url("../../img/sites/airbnb_s.png");
+.card .third {
+  background: url("../../img/sites/coachsportif/coachSporstif_s.png");
 }
 /* line 242, ../sass/screen.scss */
+.card .fourth {
+  background: url("../../img/sites/airbnb/airbnb_s.png");
+}
+/* line 246, ../sass/screen.scss */
+.card .five:after {
+  content: 'Image à venir';
+}
+/* line 251, ../sass/screen.scss */
+.card .six:after {
+  content: 'Image à venir';
+}
+/* line 256, ../sass/screen.scss */
+.card .seven:after {
+  content: 'Image à venir';
+}
+/* line 261, ../sass/screen.scss */
+.card .eight:after {
+  content: 'Image à venir';
+}
+/* line 265, ../sass/screen.scss */
 .card .card-title {
   font-size: 15px;
 }
-/* line 245, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 .card .card-text {
   font-size: 10px;
   color: grey;
@@ -321,14 +344,14 @@ card
 /*=======================================================================
 form
 ===========================================================================*/
-/* line 253, ../sass/screen.scss */
+/* line 276, ../sass/screen.scss */
 .field {
   position: relative;
   height: 72px;
   padding: 16px 0 8px 0;
 }
 
-/* line 258, ../sass/screen.scss */
+/* line 281, ../sass/screen.scss */
 .field-label {
   position: relative;
   margin: 0;
@@ -347,7 +370,7 @@ form
   transition-duration: 0.3s;
 }
 
-/* line 269, ../sass/screen.scss */
+/* line 292, ../sass/screen.scss */
 .field-input {
   position: relative;
   display: block;
@@ -362,7 +385,7 @@ form
   outline: none;
 }
 
-/* line 282, ../sass/screen.scss */
+/* line 305, ../sass/screen.scss */
 .field::after, .field::before {
   content: '';
   height: 2px;
@@ -373,7 +396,7 @@ form
   background-color: #e7e7e7;
 }
 
-/* line 291, ../sass/screen.scss */
+/* line 314, ../sass/screen.scss */
 .field::after {
   background-color: #ff85a4;
   -moz-transform: scaleX(0);
@@ -386,7 +409,7 @@ form
   transition-duration: 0.3s;
 }
 
-/* line 296, ../sass/screen.scss */
+/* line 319, ../sass/screen.scss */
 .has-label .field-label {
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
@@ -394,13 +417,13 @@ form
   transform: translateY(0);
 }
 
-/* line 299, ../sass/screen.scss */
+/* line 322, ../sass/screen.scss */
 .is-focused .field-label {
   font-size: 12px;
   color: #ff85a4;
 }
 
-/* line 304, ../sass/screen.scss */
+/* line 327, ../sass/screen.scss */
 .field.is-focused::after {
   -moz-transform: scaleX(1);
   -ms-transform: scaleX(1);
@@ -408,7 +431,7 @@ form
   transform: scaleX(1);
 }
 
-/* line 307, ../sass/screen.scss */
+/* line 330, ../sass/screen.scss */
 .message {
   color: #bfbfbf;
 }
@@ -416,7 +439,7 @@ form
 /*=============================================================================
 competence
 ==============================================================================*/
-/* line 313, ../sass/screen.scss */
+/* line 336, ../sass/screen.scss */
 .language {
   height: 200px;
 }
@@ -424,24 +447,24 @@ competence
 /*==============================================================================
 footer
 ================================================================================*/
-/* line 319, ../sass/screen.scss */
+/* line 342, ../sass/screen.scss */
 footer {
   border-top: 1px dashed grey;
   background-color: #CCCCCC;
 }
-/* line 321, ../sass/screen.scss */
+/* line 344, ../sass/screen.scss */
 footer h4 {
   font-size: 20px;
 }
-/* line 325, ../sass/screen.scss */
+/* line 348, ../sass/screen.scss */
 footer .dashed {
   border-left: 1px dashed grey;
 }
-/* line 328, ../sass/screen.scss */
+/* line 351, ../sass/screen.scss */
 footer img {
   height: 30px;
 }
-/* line 332, ../sass/screen.scss */
+/* line 355, ../sass/screen.scss */
 footer .article-footer p {
   font-size: 10px;
 }
@@ -567,5 +590,11 @@ desktop format
     padding-bottom: 10px;
     width: 370px;
     height: 230px;
+  }
+
+  /* line 50, ../sass/_desktop.scss */
+  .photo {
+    width: 300px;
+    height: 300px;
   }
 }

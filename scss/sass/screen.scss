@@ -227,17 +227,40 @@ card
       }
     }
   }
+  /*================================================================================
+  image portfolio
+  ================================================================================*/
   .first{
-    background: url("../../img/sites/archiduchesse_s.png");
+    background: url("../../img/sites/archiduchesse/archiduchesse_s.png");
   }
   .second{
-    background: url("../../img/sites/leboncoin_s.png");
+    background: url("../../img/sites/leboncoin/leboncoin_s.png");
   }
   .third{
-    background: url("../../img/sites/coachSporstif_s.png");
+    background: url("../../img/sites/coachsportif/coachSporstif_s.png");
   }
   .fourth{
-    background: url("../../img/sites/airbnb_s.png");
+    background: url("../../img/sites/airbnb/airbnb_s.png");
+  }
+  .five{
+    &:after{
+      content: 'Image à venir';
+    }
+  }
+  .six{
+    &:after{
+      content: 'Image à venir';
+    }
+  }
+  .seven{
+    &:after{
+      content: 'Image à venir';
+    }
+  }
+  .eight{
+    &:after{
+      content: 'Image à venir';
+    }
   }
   .card-title{
     font-size: 15px;
