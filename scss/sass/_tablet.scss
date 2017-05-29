@@ -2,6 +2,31 @@
 tablet format
 ===============================================================================*/
 @media only screen and (min-width: 768px){
+  /*===================================================================================
+portfolio
+=====================================================================================*/
+
+    .media-back {
+      background-image: url("../../img/sites/mac.png-vsnd");
+      background-size: cover;
+      @include border-radius(3px);
+      width: 400px;
+      height: 280px;
+      .carousel-item {
+        margin-top: 45px;
+        margin-left: 15px;
+        padding-bottom: 10px;
+        width: 370px;
+        height: 230px;
+      }
+      .link {
+        width: 25px;
+      }
+      .photo {
+        width: 300px;
+        height: 300px;
+      }
+    }
 
 }
 /*===============================================================================
@@ -50,4 +75,5 @@ description
       font-size: 25px;
     }
   }
+
 }
