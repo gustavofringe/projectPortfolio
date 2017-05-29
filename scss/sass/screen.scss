@@ -105,6 +105,9 @@ menu desktop
 .menu-desktop{
   display: none;
 }
+.home{
+  display: none;
+}
 /*=================================================================================================================
 visible menu
 when the body have a with side bar class
@@ -352,6 +355,19 @@ footer{
   .article-footer{
     p{
       font-size: 10px;
+    }
+  }
+  address{
+    display: block;
+    i{
+      vertical-align: bottom;
+    }
+    .coordonate{
+      padding-top: 15px;
+      vertical-align: middle;
+      a{
+        text-transform: none;
+      }
     }
   }
 }

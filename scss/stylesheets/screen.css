@@ -119,18 +119,23 @@ menu desktop
   display: none;
 }
 
+/* line 108, ../sass/screen.scss */
+.home {
+  display: none;
+}
+
 /*=================================================================================================================
 visible menu
 when the body have a with side bar class
 ==================================================================================================================*/
-/* line 113, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 .with--sidebar .site-pusher {
   -moz-transform: translateX(-300px);
   -ms-transform: translateX(-300px);
   -webkit-transform: translateX(-300px);
   transform: translateX(-300px);
 }
-/* line 116, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 .with--sidebar .site-cache {
   position: absolute;
   left: 0;
@@ -143,7 +148,7 @@ when the body have a with side bar class
 /*============================================================================================================
 container
 ===============================================================================================================*/
-/* line 129, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 .stripe:after {
   position: absolute;
   z-index: 1000;
@@ -153,12 +158,12 @@ container
   background: url("../../img/stripes.png-vsnd") repeat-x center center;
 }
 
-/* line 138, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 .site-pusher, .site-container {
   height: 100%;
 }
 
-/* line 141, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 .site-pusher {
   -moz-transition-duration: 0.4s;
   -o-transition-duration: 0.4s;
@@ -170,12 +175,12 @@ container
   transform: translateX(0px);
 }
 
-/* line 145, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 .site-container {
   overflow: hidden;
 }
 
-/* line 148, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 .site-content {
   position: absolute;
   top: 80px;
@@ -187,18 +192,18 @@ container
   -webkit-overflow-scrolling: touch;
 }
 
-/* line 158, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 .container {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 159, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 .site-content {
   padding-top: 30px;
 }
 
-/* line 162, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 .border {
   border-bottom: 1px dashed grey;
 }
@@ -206,7 +211,7 @@ container
 /*===========================================================================================================
 my picture
 ==============================================================================================================*/
-/* line 168, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 .figure {
   display: none;
 }
@@ -214,7 +219,7 @@ my picture
 /*===========================================================================================================
 article
 =======================================================================================================*/
-/* line 174, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 .description {
   padding: 0;
   margin: 0;
@@ -222,37 +227,37 @@ article
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 178, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 .description h1 {
   font-size: 24px;
 }
-/* line 181, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 .description h2 {
   font-size: 24px;
 }
-/* line 183, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 .description h2 em {
   font-size: 16px;
   color: #424242;
 }
-/* line 188, ../sass/screen.scss */
+/* line 191, ../sass/screen.scss */
 .description img {
   width: 50px;
   margin: 30px;
 }
-/* line 192, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 .description p {
   color: #424242;
 }
-/* line 195, ../sass/screen.scss */
+/* line 198, ../sass/screen.scss */
 .description span {
   text-transform: uppercase;
 }
-/* line 198, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 .description .simplon {
   overflow: auto;
 }
-/* line 200, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 .description .simplon img {
   height: 50px;
   width: 50px;
@@ -262,13 +267,13 @@ article
 /*=============================================================================
 card
 ==============================================================================*/
-/* line 210, ../sass/screen.scss */
+/* line 213, ../sass/screen.scss */
 .card {
   /*================================================================================
   image portfolio
   ================================================================================*/
 }
-/* line 211, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 .card .content-image {
   cursor: pointer;
   height: 150px;
@@ -278,7 +283,7 @@ card
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 216, ../sass/screen.scss */
+/* line 219, ../sass/screen.scss */
 .card .content-image:hover {
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
@@ -286,7 +291,7 @@ card
   transform: scale(1.2);
   opacity: 0.5;
 }
-/* line 219, ../sass/screen.scss */
+/* line 222, ../sass/screen.scss */
 .card .content-image:hover .image {
   margin: auto auto;
   height: 30px;
@@ -294,43 +299,43 @@ card
   opacity: 1;
   content: url("../../img/link-3.svg");
 }
-/* line 231, ../sass/screen.scss */
+/* line 234, ../sass/screen.scss */
 .card .first {
   background: url("../../img/sites/archiduchesse/archiduchesse_s.png");
 }
-/* line 234, ../sass/screen.scss */
+/* line 237, ../sass/screen.scss */
 .card .second {
   background: url("../../img/sites/leboncoin/leboncoin_s.png");
 }
-/* line 237, ../sass/screen.scss */
+/* line 240, ../sass/screen.scss */
 .card .third {
   background: url("../../img/sites/coachsportif/coachSporstif_s.png");
 }
-/* line 240, ../sass/screen.scss */
+/* line 243, ../sass/screen.scss */
 .card .fourth {
   background: url("../../img/sites/airbnb/airbnb_s.png");
 }
-/* line 244, ../sass/screen.scss */
+/* line 247, ../sass/screen.scss */
 .card .five:after {
   content: 'Image à venir';
 }
-/* line 249, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 .card .six:after {
   content: 'Image à venir';
 }
-/* line 254, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 .card .seven:after {
   content: 'Image à venir';
 }
-/* line 259, ../sass/screen.scss */
+/* line 262, ../sass/screen.scss */
 .card .eight:after {
   content: 'Image à venir';
 }
-/* line 263, ../sass/screen.scss */
+/* line 266, ../sass/screen.scss */
 .card .card-title {
   font-size: 15px;
 }
-/* line 266, ../sass/screen.scss */
+/* line 269, ../sass/screen.scss */
 .card .card-text {
   font-size: 10px;
   color: grey;
@@ -339,14 +344,14 @@ card
 /*=======================================================================
 form
 ===========================================================================*/
-/* line 274, ../sass/screen.scss */
+/* line 277, ../sass/screen.scss */
 .field {
   position: relative;
   height: 72px;
   padding: 16px 0 8px 0;
 }
 
-/* line 279, ../sass/screen.scss */
+/* line 282, ../sass/screen.scss */
 .field-label {
   position: relative;
   margin: 0;
@@ -365,7 +370,7 @@ form
   transition-duration: 0.3s;
 }
 
-/* line 290, ../sass/screen.scss */
+/* line 293, ../sass/screen.scss */
 .field-input {
   position: relative;
   display: block;
@@ -380,7 +385,7 @@ form
   outline: none;
 }
 
-/* line 303, ../sass/screen.scss */
+/* line 306, ../sass/screen.scss */
 .field::after, .field::before {
   content: '';
   height: 2px;
@@ -391,7 +396,7 @@ form
   background-color: #e7e7e7;
 }
 
-/* line 312, ../sass/screen.scss */
+/* line 315, ../sass/screen.scss */
 .field::after {
   background-color: #ff85a4;
   -moz-transform: scaleX(0);
@@ -404,7 +409,7 @@ form
   transition-duration: 0.3s;
 }
 
-/* line 317, ../sass/screen.scss */
+/* line 320, ../sass/screen.scss */
 .has-label .field-label {
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
@@ -412,13 +417,13 @@ form
   transform: translateY(0);
 }
 
-/* line 320, ../sass/screen.scss */
+/* line 323, ../sass/screen.scss */
 .is-focused .field-label {
   font-size: 12px;
   color: #ff85a4;
 }
 
-/* line 325, ../sass/screen.scss */
+/* line 328, ../sass/screen.scss */
 .field.is-focused::after {
   -moz-transform: scaleX(1);
   -ms-transform: scaleX(1);
@@ -426,7 +431,7 @@ form
   transform: scaleX(1);
 }
 
-/* line 328, ../sass/screen.scss */
+/* line 331, ../sass/screen.scss */
 .message {
   color: #bfbfbf;
 }
@@ -434,7 +439,7 @@ form
 /*=============================================================================
 competence
 ==============================================================================*/
-/* line 334, ../sass/screen.scss */
+/* line 337, ../sass/screen.scss */
 .language {
   height: 200px;
 }
@@ -442,31 +447,80 @@ competence
 /*==============================================================================
 footer
 ================================================================================*/
-/* line 340, ../sass/screen.scss */
+/* line 343, ../sass/screen.scss */
 footer {
   border-top: 1px dashed grey;
   background-color: #CCCCCC;
 }
-/* line 342, ../sass/screen.scss */
+/* line 345, ../sass/screen.scss */
 footer h4 {
   font-size: 20px;
 }
-/* line 346, ../sass/screen.scss */
+/* line 349, ../sass/screen.scss */
 footer .dashed {
   border-left: 1px dashed grey;
 }
-/* line 349, ../sass/screen.scss */
+/* line 352, ../sass/screen.scss */
 footer img {
   height: 30px;
 }
-/* line 353, ../sass/screen.scss */
+/* line 356, ../sass/screen.scss */
 footer .article-footer p {
   font-size: 10px;
+}
+/* line 360, ../sass/screen.scss */
+footer address {
+  display: block;
+}
+/* line 362, ../sass/screen.scss */
+footer address i {
+  vertical-align: bottom;
+}
+/* line 365, ../sass/screen.scss */
+footer address .coordonate {
+  padding-top: 15px;
+  vertical-align: middle;
+}
+/* line 368, ../sass/screen.scss */
+footer address .coordonate a {
+  text-transform: none;
 }
 
 /*===========================================================================
 tablet format
 ===============================================================================*/
+@media only screen and (min-width: 768px) {
+  /*===================================================================================
+portfolio
+=====================================================================================*/
+  /* line 9, ../sass/_tablet.scss */
+  .media {
+    background-image: url("../../img/sites/mac.png-vsnd");
+    background-size: cover;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    width: 400px;
+    height: 280px;
+  }
+  /* line 15, ../sass/_tablet.scss */
+  .media .carousel-item {
+    margin-top: 45px;
+    margin-left: 15px;
+    padding-bottom: 10px;
+    width: 370px;
+    height: 230px;
+  }
+  /* line 22, ../sass/_tablet.scss */
+  .media .link {
+    width: 25px;
+  }
+  /* line 25, ../sass/_tablet.scss */
+  .media .photo {
+    width: 300px;
+    height: 300px;
+  }
+}
 /*===============================================================================
 tablet landscape format
 ==================================================================================*/
@@ -474,7 +528,7 @@ tablet landscape format
   /*=================================================================
   menu hidden
   ===================================================================*/
-  /* line 14, ../sass/_tablet.scss */
+  /* line 39, ../sass/_tablet.scss */
   .menu-desktop {
     display: block;
     height: 66px;
@@ -482,7 +536,7 @@ tablet landscape format
     float: right;
     padding: 0 25px;
   }
-  /* line 20, ../sass/_tablet.scss */
+  /* line 45, ../sass/_tablet.scss */
   .menu-desktop a {
     padding: 0 10px;
   }
@@ -490,17 +544,17 @@ tablet landscape format
   /*=====================================================================
 header
   ====================================================================*/
-  /* line 27, ../sass/_tablet.scss */
+  /* line 52, ../sass/_tablet.scss */
   .header {
     border-bottom: 1px dashed grey;
   }
 
-  /* line 30, ../sass/_tablet.scss */
+  /* line 55, ../sass/_tablet.scss */
   .header_logo {
     padding: 0 40px;
   }
 
-  /* line 33, ../sass/_tablet.scss */
+  /* line 58, ../sass/_tablet.scss */
   .header_icon {
     display: none;
   }
@@ -508,7 +562,7 @@ header
   /*=========================================================================
   my picture
   =============================================================================*/
-  /* line 39, ../sass/_tablet.scss */
+  /* line 64, ../sass/_tablet.scss */
   .figure {
     display: block;
   }
@@ -516,11 +570,11 @@ header
   /*============================================================================
 description
   ==============================================================================*/
-  /* line 46, ../sass/_tablet.scss */
+  /* line 71, ../sass/_tablet.scss */
   .title h1 {
     font-size: 45px;
   }
-  /* line 49, ../sass/_tablet.scss */
+  /* line 74, ../sass/_tablet.scss */
   .title p {
     font-size: 25px;
   }
@@ -566,35 +620,5 @@ desktop format
   /* line 30, ../sass/_desktop.scss */
   .container-top .menu a:hover {
     color: grey;
-  }
-
-  /* line 36, ../sass/_desktop.scss */
-  .media-back {
-    background-image: url("../../img/sites/mac.png-vsnd");
-    background-size: cover;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    width: 400px;
-    height: 280px;
-  }
-  /* line 42, ../sass/_desktop.scss */
-  .media-back .carousel-item {
-    margin-top: 45px;
-    margin-left: 15px;
-    padding-bottom: 10px;
-    width: 370px;
-    height: 230px;
-  }
-
-  /* line 50, ../sass/_desktop.scss */
-  .link {
-    width: 25px;
-  }
-
-  /* line 53, ../sass/_desktop.scss */
-  .photo {
-    width: 300px;
-    height: 300px;
   }
 }
