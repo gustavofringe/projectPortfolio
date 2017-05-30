@@ -6,8 +6,8 @@
 @import "compass";
 @import "compass/css3/filter";
 $height-header:80px;
-$menu-width:300px !default;
-$p-index:#424242;
+$menu-width:250px !default;
+$p-index:#C4B2FF;
 $color-form: #ff85a4;
 /*==============================================================================================================
 html, body
@@ -105,9 +105,6 @@ menu desktop
 .menu-desktop{
   display: none;
 }
-.home{
-  display: none;
-}
 /*=================================================================================================================
 visible menu
 when the body have a with side bar class
@@ -129,13 +126,15 @@ when the body have a with side bar class
 container
 ===============================================================================================================*/
 .stripe{
+  position: relative;
   &:after{
     position: absolute;
-    z-index: 1000;
     content: '';
-    width: 100%;
-    height: 51px;
     background: url('../../img/stripes.png-vsnd') repeat-x center center;
+    top: 10px;
+    left:0;
+    right: 0;
+    bottom: 0;
   }
 }
 .site-pusher, .site-container{
@@ -228,48 +227,6 @@ card
       }
     }
   }
-/*================================================================================
-image portfolio
-================================================================================*/
-  .first{
-    background: url("../../img/sites/archiduchesse/archiduchesse_s.png");
-  }
-  .second{
-    background: url("../../img/sites/leboncoin/leboncoin_s.png");
-  }
-  .third{
-    background: url("../../img/sites/coachsportif/coachSporstif_s.png");
-  }
-  .fourth{
-    background: url("../../img/sites/airbnb/airbnb_s.png");
-  }
-  .five{
-    &:after{
-      content: 'Image à venir';
-    }
-  }
-  .six{
-    &:after{
-      content: 'Image à venir';
-    }
-  }
-  .seven{
-    &:after{
-      content: 'Image à venir';
-    }
-  }
-  .eight{
-    &:after{
-      content: 'Image à venir';
-    }
-  }
-  .card-title{
-    font-size: 15px;
-  }
-  .card-text{
-    font-size: 10px;
-    color: grey;
-  }
 }
 /*=======================================================================
 form
@@ -355,19 +312,6 @@ footer{
   .article-footer{
     p{
       font-size: 10px;
-    }
-  }
-  address{
-    display: block;
-    i{
-      vertical-align: bottom;
-    }
-    .coordonate{
-      padding-top: 15px;
-      vertical-align: middle;
-      a{
-        text-transform: none;
-      }
     }
   }
 }

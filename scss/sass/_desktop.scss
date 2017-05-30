@@ -33,4 +33,69 @@ desktop format
       }
     }
   }
+  .media-back {
+    background-image: url("../../img/sites/mac.png-vsnd");
+    background-size: cover;
+    @include border-radius(3px);
+    width: 400px;
+    height: 280px;
+    .carousel-item {
+      margin-top: 45px;
+      margin-left: 15px;
+      padding-bottom:10px;
+      width: 370px;
+      height: 230px;
+    }
+  }
+  .link{
+    width: 25px;
+  }
+  .photo{
+    width: 300px;
+    height: 300px;
+  }
+  .card{
+    /*================================================================================
+image portfolio
+================================================================================*/
+    .first{
+      background: url("../../img/sites/archiduchesse/archiduchesse_s.png");
+    }
+    .second{
+      background: url("../../img/sites/leboncoin/leboncoin_s.png");
+    }
+    .third{
+      background: url("../../img/sites/coachsportif/coachSporstif_s.png");
+    }
+    .fourth{
+      background: url("../../img/sites/airbnb/airbnb_s.png");
+    }
+    .five{
+      &:after{
+        content: 'Image à venir';
+      }
+    }
+    .six{
+      &:after{
+        content: 'Image à venir';
+      }
+    }
+    .seven{
+      &:after{
+        content: 'Image à venir';
+      }
+    }
+    .eight{
+      &:after{
+        content: 'Image à venir';
+      }
+    }
+    .card-title{
+      font-size: 15px;
+    }
+    .card-text{
+      font-size: 10px;
+      color: grey;
+    }
+  }
 }
