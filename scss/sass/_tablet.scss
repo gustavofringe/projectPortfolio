@@ -36,15 +36,20 @@ tablet landscape format
 /*=================================================================
 menu hidden
 ===================================================================*/
-  .menu-desktop{
+  .menu-desktop, .home{
     display: block;
     height: 66px;
     line-height: 66px;
+  }
+  .menu-desktop{
     float: right;
     padding: 0 25px;
     a{
       padding: 0 10px;
     }
+  }
+  .home{
+    float: left;
   }
   /*=====================================================================
 header
@@ -53,7 +58,8 @@ header
     border-bottom: 1px dashed grey;
   }
   .header_logo{
-    padding: 0 40px;
+    float: left;
+    padding: 0 0 0 40px;
   }
   .header_icon{
     display: none;

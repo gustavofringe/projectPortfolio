@@ -529,32 +529,42 @@ tablet landscape format
   menu hidden
   ===================================================================*/
   /* line 39, ../sass/_tablet.scss */
-  .menu-desktop {
+  .menu-desktop, .home {
     display: block;
     height: 66px;
     line-height: 66px;
+  }
+
+  /* line 44, ../sass/_tablet.scss */
+  .menu-desktop {
     float: right;
     padding: 0 25px;
   }
-  /* line 45, ../sass/_tablet.scss */
+  /* line 47, ../sass/_tablet.scss */
   .menu-desktop a {
     padding: 0 10px;
+  }
+
+  /* line 51, ../sass/_tablet.scss */
+  .home {
+    float: left;
   }
 
   /*=====================================================================
 header
   ====================================================================*/
-  /* line 52, ../sass/_tablet.scss */
+  /* line 57, ../sass/_tablet.scss */
   .header {
     border-bottom: 1px dashed grey;
   }
 
-  /* line 55, ../sass/_tablet.scss */
+  /* line 60, ../sass/_tablet.scss */
   .header_logo {
-    padding: 0 40px;
+    float: left;
+    padding: 0 0 0 40px;
   }
 
-  /* line 58, ../sass/_tablet.scss */
+  /* line 64, ../sass/_tablet.scss */
   .header_icon {
     display: none;
   }
@@ -562,7 +572,7 @@ header
   /*=========================================================================
   my picture
   =============================================================================*/
-  /* line 64, ../sass/_tablet.scss */
+  /* line 70, ../sass/_tablet.scss */
   .figure {
     display: block;
   }
@@ -570,11 +580,11 @@ header
   /*============================================================================
 description
   ==============================================================================*/
-  /* line 71, ../sass/_tablet.scss */
+  /* line 77, ../sass/_tablet.scss */
   .title h1 {
     font-size: 45px;
   }
-  /* line 74, ../sass/_tablet.scss */
+  /* line 80, ../sass/_tablet.scss */
   .title p {
     font-size: 25px;
   }
