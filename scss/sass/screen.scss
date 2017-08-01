@@ -2,17 +2,17 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
 @import "compass";
 @import "compass/css3/filter";
-$height-header:80px;
-$menu-width:250px !default;
-$p-index:#C4B2FF;
+
+$height-header: 80px;
+$menu-width: 250px !default;
+$p-index: #C4B2FF;
 $color-form: #ff85a4;
 /*==============================================================================================================
 html, body
 =================================================================================================================*/
-html, body{
+html, body {
   font-family: 'Open Sans', sans-serif !important;
   font-size: 16px;
   line-height: 1.4;
@@ -20,52 +20,57 @@ html, body{
   margin: 0;
   padding: 0;
 }
-a{
+
+a {
   text-decoration: none;
   color: inherit;
   text-transform: uppercase;
 }
+
 /*===========================================================================================================
 header
 ============================================================================================================*/
 
-.header{
+.header {
   height: $height-header;
   position: static;
   border-bottom: 1px dashed grey;
-  svg{
-    width: 100px;
-    margin-top: 10px;
-    padding: 0 25px;
-    height: 50px;
-    .inside {
-      fill: #bcbcad;
-      fill-opacity: 1;
-    }
-    .init {
-      fill: #595963;
-      fill-opacity: 1;
-    }
-    .init, .inside {
-      &:hover {
-        fill: #1f55ff;
-        fill-opacity: 0.5;
+  .header_logo {
+    svg {
+      width: 100px;
+      margin-top: 10px;
+      padding: 0 25px;
+      height: 50px;
+      .inside {
+        fill: #bcbcad;
+        fill-opacity: 1;
+      }
+      .init {
+        fill: #595963;
+        fill-opacity: 1;
+      }
+      .init, .inside {
+        &:hover {
+          fill: #1f55ff;
+          fill-opacity: 0.5;
+        }
       }
     }
   }
 }
+
 /*============================================================================================================
 hamburger icon
 =============================================================================================================*/
-.header_icon{
+.header_icon {
   position: relative;
   display: block;
-  float:right;
+  float: right;
   height: $height-header;
   width: 50px;
   height: $height-header;
   cursor: pointer;
-  &:after{
+  &:after {
     content: '';
     position: absolute;
     display: block;
@@ -76,12 +81,13 @@ hamburger icon
     @include box-shadow(0 10px 0 2px black, 0 20px 0 2px black, 0 30px 0 2px black);
   }
 }
+
 /*=========================================================================================================
 hidden menu
 ===========================================================================================================*/
-.container-top{
+.container-top {
 
-  .menu{
+  .menu {
     position: absolute;
     right: 0;
     top: 0;
@@ -90,7 +96,7 @@ hidden menu
     width: $menu-width;
     @include transform (translateX($menu-width));
     @include transition-duration(0.4s);
-    a{
+    a {
       display: block;
       text-align: center;
       height: 40px;
@@ -99,57 +105,64 @@ hidden menu
     }
   }
 }
+
 /*============================================================================================================
 menu desktop
 ==============================================================================================================*/
-.menu-desktop{
+.menu-desktop {
   display: none;
 }
+
 /*=================================================================================================================
 visible menu
 when the body have a with side bar class
 ==================================================================================================================*/
-.with--sidebar{
-  .site-pusher{
+.with--sidebar {
+  .site-pusher {
     @include transform(translateX($menu-width *-1));
   }
-  .site-cache{
+  .site-cache {
     position: absolute;
     left: 0;
     bottom: 0;
     right: 0;
     top: 0;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
   }
 }
+
 /*============================================================================================================
 container
 ===============================================================================================================*/
-.stripe{
+.stripe {
   position: relative;
-  &:after{
+  &:after {
     position: absolute;
     content: '';
     background: url('../../img/stripes.png-vsnd') repeat-x center center;
     top: 10px;
-    left:0;
+    left: 0;
     right: 0;
     bottom: 0;
   }
 }
-.site-pusher, .site-container{
+
+.site-pusher, .site-container {
   height: 100%;
 }
-.site-pusher{
+
+.site-pusher {
   @include transition-duration(0.4s);
   @include transform(translateX(0px));
 }
-.site-container{
+
+.site-container {
   overflow: hidden;
 }
-.site-content{
+
+.site-content {
   position: absolute;
-  top:$height-header;
+  top: $height-header;
   left: 0;
   right: 0;
   bottom: 0;
@@ -157,60 +170,68 @@ container
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
-.container{@include clearfix;}
-.site-content{
-  padding-top:30px;
+
+.container {
+  @include clearfix;
 }
-.border{
+
+.site-content {
+  padding-top: 30px;
+}
+
+.border {
   border-bottom: 1px dashed grey;
 }
+
 /*===========================================================================================================
 my picture
 ==============================================================================================================*/
-.figure{
+.figure {
   display: none;
 }
+
 /*===========================================================================================================
 article
 =======================================================================================================*/
-.description{
+.description {
   padding: 0;
   margin: 0;
   @include border-radius(5px);
-  h1{
+  h1 {
     font-size: 24px;
   }
-  h2{
+  h2 {
     font-size: 24px;
-    em{
+    em {
       font-size: 16px;
       color: $p-index;
     }
   }
-  img{
+  img {
     width: 50px;
     margin: 30px;
   }
-  p{
+  p {
     color: $p-index;
   }
   span {
     text-transform: uppercase;
   }
-  .simplon{
+  .simplon {
     overflow: auto;
-    img{
+    img {
       height: 50px;
       width: 50px;
       float: left;
     }
   }
 }
+
 /*=============================================================================
 card
 ==============================================================================*/
 .card {
-  .content-image{
+  .content-image {
     cursor: pointer;
     height: 150px;
     width: 240px;
@@ -218,7 +239,7 @@ card
     &:hover {
       @include transform(scale(1.2));
       opacity: 0.5;
-      .image{
+      .image {
         margin: auto auto;
         height: 30px;
         width: 30px;
@@ -228,15 +249,17 @@ card
     }
   }
 }
+
 /*=======================================================================
 form
 ===========================================================================*/
-.field{
+.field {
   position: relative;
   height: 72px;
   padding: 16px 0 8px 0;
 }
-.field-label{
+
+.field-label {
   position: relative;
   margin: 0;
   color: lighten(#000, 75);
@@ -244,10 +267,11 @@ form
   font-weight: 400;
   font-size: 16px;
   display: block;
-  @include transform( translateY(24px));
+  @include transform(translateY(24px));
   @include transition-duration(0.3s);
 }
-.field-input{
+
+.field-input {
   position: relative;
   display: block;
   width: 100%;
@@ -260,7 +284,8 @@ form
   font-size: 16px;
   outline: none;
 }
-.field::after, .field::before{
+
+.field::after, .field::before {
   content: '';
   height: 2px;
   width: 100%;
@@ -269,48 +294,55 @@ form
   left: 0;
   background-color: #e7e7e7;
 }
-.field::after{
+
+.field::after {
   background-color: $color-form;
   @include transform(scaleX(0));
   @include transition-duration(0.3s);
 }
-.has-label .field-label{
+
+.has-label .field-label {
   @include transform(translateY(0));
 }
-.is-focused .field-label{
+
+.is-focused .field-label {
 
   font-size: 12px;
   color: $color-form;
 }
-.field.is-focused::after{
+
+.field.is-focused::after {
   @include transform(scaleX(1));
 }
-.message{
+
+.message {
   color: lighten(#000, 75);
 }
+
 /*=============================================================================
 competence
 ==============================================================================*/
-.language{
+.language {
   height: 200px;
 }
+
 /*==============================================================================
 footer
 ================================================================================*/
-footer{
+footer {
   border-top: 1px dashed grey;
-  h4{
+  h4 {
     font-size: 20px;
   }
   background-color: #CCCCCC;
-  .dashed{
+  .dashed {
     border-left: 1px dashed grey;
   }
-  img{
+  img {
     height: 30px;
   }
-  .article-footer{
-    p{
+  .article-footer {
+    p {
       font-size: 10px;
     }
   }
