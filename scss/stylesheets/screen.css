@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -578,27 +577,27 @@ image portfolio
   .card .fourth {
     background: url("../../img/sites/airbnb/airbnb_s.png");
   }
-  /* line 74, ../sass/_desktop.scss */
-  .card .five:after {
-    content: 'Image à venir';
+  /* line 73, ../sass/_desktop.scss */
+  .card .five {
+    background: url("../../img/sites/projectInk/projectInk_s.png");
   }
-  /* line 79, ../sass/_desktop.scss */
-  .card .six:after {
-    content: 'Image à venir';
+  /* line 78, ../sass/_desktop.scss */
+  .card .six {
+    background: url("../../img/sites/projectGoogle/projectGoogle_s.png");
   }
-  /* line 84, ../sass/_desktop.scss */
-  .card .seven:after {
-    content: 'Image à venir';
+  /* line 82, ../sass/_desktop.scss */
+  .card .seven {
+    background: url("../../img/sites/paintJquery/paintJquery_s.png");
   }
-  /* line 89, ../sass/_desktop.scss */
-  .card .eight:after {
-    content: 'Image à venir';
+  /* line 86, ../sass/_desktop.scss */
+  .card .eight {
+    background: url("../../img/sites/pomodoroJquery/pomodoroJquery_s.png");
   }
-  /* line 93, ../sass/_desktop.scss */
+  /* line 90, ../sass/_desktop.scss */
   .card .card-title {
     font-size: 15px;
   }
-  /* line 96, ../sass/_desktop.scss */
+  /* line 93, ../sass/_desktop.scss */
   .card .card-text {
     font-size: 10px;
     color: grey;
